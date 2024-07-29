@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      
+        .navbar a{
+            text-decoration: none;
+            padding: 5px;
+            color: white;
+        }
+        header{
+            background-image: url(Banner-bg.jpg);
+            width: 100vw;
+            height: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: aqua;
+              align-items: center;
+              justify-content: space-around;
+        }
+        .navbar a:hover{
+            background-color: black;
+            opacity: 0.5;
+        }
+        .white{
+            background-color: antiquewhite;
+            height: 70vh;
+            width: 100vw;
+        }
+        .firstdiv{
+            background-image: url("Banner-bg.jpg");
+            height: 60vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+        .git{
+            display: grid;
+            grid-template-columns: 100px 200px;
+           align-items: center;
+           justify-content: center;
+           overflow: hidden;
+           column-gap: 50px;
+           margin-left: 10px;
+           margin-top: 30px;
+        
+        }
+        #gitimg{
+            background-image: url("Slider-img1.jpg");
+            height: 50vh;
+            width: 45vw;
+            overflow: hidden;
+           
+        }
+        #gitmatter{
+           margin-top: 70px;
+           margin-left: 20px;
+        }
+        .blackline{
+            background-color: black;
+            height: 40%;
+            display: grid;
+            margin-top: 230px;
+            opacity: 0.5;
+        }
+        .div3container{
+            background-color: white;
+            height: 100vh;
+            width: 100vw;
+            color: black;
+      
+        }
+        .div3inner{
+            display: grid;
+            grid-template-rows: 2fr 2fr 2fr;
+           grid-template-rows: 50px 80px 60px;
+            justify-content: center;
+            justify-items: center;
+            color: white;
+        
+        }
+        #about{
+            margin-top: 10px;
+        }
+        #matter{
+            margin-left: 60px;
+            margin-right: 50px;
+            height: inherit;
+            overflow: hidden;
+        }
+        #divonly{
+            background-color: red;
+            width: 200px;
+            height: 2px;
+            margin-top: 20px;
+        }
+        .item{
+            display: flex;
+            justify-content: center;
+            height: 200px;  
+            margin-top: -10px;
+        }
+        .items{
+            background-color: lightgray;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            border: 2px solid black; 
+        }
+        .one:hover{
+            background-color: orange;
+            color: white;
+        }
+        .two:hover{
+            background-color: orange;
+            color: white;
+        }
+        .three:hover{
+            background-color: orange;
+            color: white;
+        }
+        .div4{
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            grid-template-rows: 260px;
+            border: 2px solid blac;
+            column-gap: 10px;
+           justify-content: center;
+           text-align: center;
+           margin-top: -100px;
+           box-sizing: border-box;
+           object-fit: cover;
+           /* overflow: hidden;
+           overflow-y: hidden;
+          */
+           
+        }
+        #img1{
+            width: 70%;
+            height: 100%;
+           
+        }
+        #img2{
+            width: 65%;
+            height: 100%; 
+        }
+      
+        #img2div{
+           margin-left: -50px;
+           margin-top: -200px;
+        }
+       .div4container{
+        background-image: url("Banner-bg.jpg");
+        opacity: 10px;
+        height: 80vh;
+        width: 100vw;
+       }
+       .fourimg{
+        display: flex;
+        justify-content: center;
+    
+       }
+       .fourimg img{
+        height: 60%;
+        width: 90%;
+        padding: 10px;
+       }
+       .div5container{
+        background-color: white;
+        height: 100vh;
+        width: 100vw;
+       }
+       .overcontainer{
+        margin-top: -20px;
+        display: flex;
+        flex-direction: column;
+      
+        
+       }
+       .divbox1{
+        display: flex;
+        height: 10px;
+        justify-content: center;
+       }
+       .divbox1 div{
+        height: 40px;
+
+       }
+       .divbox2 div{
+        height: 40px;
+
+       }
+       .divbox3 div{
+        height: 40px;
+
+       }
+       .divbox2{
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+        height: 60%;
+        margin-top: 40px;
+       }
+       .divbox3{
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
+       }
+       @media screen and (max-width:445px){
+        .divbox1{
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .divbox2{
+            display: inline-block;
+            margin-left: 115px;
+            margin-top: -10px;
+           
+            
+        }
+        .divbox3 {
+            display: inline-block;
+            margin-left: 218px;
+            margin-top: -280px;
+           
+            
+        }
+        
+       }
+       .div6container{
+        background-image: url("blur.jpg");
+        width: 100vw;
+        background-size: 100%;
+            background-color: red;
+            height: 40vh;
+       }
+       .divmap{
+        background-image: url("map.jpg");
+        height: 40vh;
+        width: 100vw;
+       }
+       .last{
+        background-image: url("Banner-bg.jpg");
+        height: 100vh;
+        width: 100vw;
+       }
+       .last{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+       }
+       
+        @media screen and (max-width:460px) {
+            .last{
+                display: block;
+            }
+            .mouni p{
+                display: block;
+                margin: 10px;
+                padding: 10px;
+            }
+            .div4{
+            display: block;
+        
+            }
+            .prag{
+                margin-top:30px;
+                padding: 5%;
+            }
+
+       }
+           
+       .nameg{
+        margin-top: -140px;
+        margin-left: -200px;
+       }
+       .bhannu img{
+        margin-left: -250px;
+        margin-top: 30px;
+       
+       }
+       .information{
+        margin-right: 30px;
+        margin-top: 30px;
+        width: 100%;
+       }
+       .lastfooter{
+        background-image: url("blur.jpg");
+        height: 10vh;
+        background-size: cover;
+       }
+       .lastfooter div{
+        color: white;
+        text-align: center;
+        padding: 10px;
+       }
+       .div4{
+        margin-bottom: 30px;
+       }
+       #img1div{
+        position: relative;
+       }
+       #img2{
+        position: absolute;
+        top:15px
+       }
+       @media screen and (max-width:463px){
+        .lastfooter{
+            font-size: small;
+            height: 15vh;
+        }
+        
+       }
+
+     
+      
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+          <h2>NOVEMBER</h1>
+       </div>
+       <nav class="navbar">
+         <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">pricing</a>
+        <a href="#">contact</a>
+       </nav>
+    </header>
+    <main class="white">
+        <div class="firstdiv">
+            <div class="git">
+                <div id="gitmatter"><h3>RESPONSIVE<br>MOBILE FRIENDLY</h2>
+                    <p> repellat nulla libero architecto alias, quia tempore.</p>
+                    <input type="text" placeholder="MORE DETAILS" style="width: 100PX; background-color: white; border: none; color: red;">
+                </div>
+                <div id="gitimg">
+                    <div class="blackline"></div>
+
+                </div>
+            </div>
+          
+        </div>
+       
+    </main>
+    <div class="div3container">
+        <div class="div3inner" style="color: black;">
+            <div id="about">
+                <h1>ABOUT US</h1>
+            </div>
+            <div id="matter">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quas nulla, veritatis provident et, nesciunt, in ratione voluptas nostrum similique omnis totam eveniet. Odio vel esse ullam, placeat sunt impedit.</p>
+            </div>
+            <div id="divonly"></div>
+        </div>
+        <div class="item">
+            <div class="items one">MISION</div>
+            <div class="items two">VISION</div>
+            <div class="items three">SPONSORS</div>
+         </div>
+         <div class="div4">
+            
+                <div id="img1div">
+                    <img id="img2" src="about-img1.jpg" >
+                    <img id="img1" src="about-img2.jpg">
+                    
+                </div>
+
+            <div class="prag">
+             <p><h3>SED AC URNA SIT AMET LOREM</p></h3><br>
+             <p >TACITI SOCIOSQU AD LITORA TORQUENT PER CO TUBIA</p><br>
+             <p>TACITI SOCIOSQU AD LITORA TORQUENT PER CO TUBIA
+                November is free HTML CSS website template from templatemo and you can download and use it for any purpose. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elit nunc, pore ommodo euismod eu, fermentum a neque. Fusce scelerisque tincidunt auctor. Integer varius ullamcorper interdum.
+                Phasellus pretium elementum rhoncus. Aenean sit amet odio eu ante volutpat rutrum.
+                Vestibulum ullamcorper faucibus orci, in blandit massa fringilla at. Nulla in fermentum eros. Suspendisse vitae aliquam metus.
+               </p>
+            </div>
+    </div>
+    <div class="div4container">
+        <div class="div3inner">
+            <div id="about">
+                <h2>OUR SERVICES</h1>
+            </div>
+            <div id="matter">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quas nulla, veritatis provident et, nesciunt, in ratione voluptas nostrum similique omnis totam eveniet. Odio vel esse ullam, placeat sunt impedit.</p>
+            </div>
+            <div id="divonly"></div>
+        </div>
+        <div class="fourimg">
+            <div>
+             <img src="concept-bg.jpg">
+            </div>
+            <div>
+              <img src="desgin-bg.jpg">
+             
+            </div>
+            <div>
+             <img src="Development-bg.jpg">
+            </div>
+            <div>
+             <img src="systam-bg.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="div5container">
+         <div class="div3inner" style="color: black;">
+            <div id="about">
+                <h1>PRICING</h1>
+            </div>
+            <div id="matter">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quas nulla, veritatis provident et, nesciunt, in ratione voluptas nostrum similique omnis totam eveniet. Odio vel esse ullam, placeat sunt impedit.</p>
+            </div>
+            <div id="divonly"></div>
+        </div>
+        <div class="overcontainer">
+            <div class="divbox1">
+                <div class="items item2" style="background-color: orange; color: black;">basic</div>
+                <div class="items item3" style="background-color: black; color: orange;">$27.50</div>
+                <div class="items item3">2,000GB<br>BAND</div>
+                <div class="items item4">32 GB<br>MEMORY</div>
+                <div class="items item5">SUPPORT<br>24</div>
+                <div class="items item6">UPDATE<br>$20</div>
+                <div class="items item7" style="background-color: black; color: white;" >ORDER NOW</div>
+            </div>
+            <div class="divbox2">
+                <div class="items item2"  style="background-color: orange; color: black;">basic</div>
+                <div class="items item3" style="background-color: black; color: orange;">$27.50</div>
+                <div class="items item3">2,000GB<br>BAND </div>
+                <div class="items item4">32 GB<br>MEMORY</div>
+                <div class="items item5">SUPPORT<br>24 </div>
+                <div class="items item6">UPDATE<br>$20</div>
+                <div class="items item7" style="background-color: black; color: white;">ORDER NOW</div>
+            </div>
+            <div class="divbox3">
+                <div class="items item2" style="background-color: orange; color: black;">basic</div>
+                <div class="items item3" style="background-color: black; color: orange;">$27.50</div>
+                <div class="items item3">2,000GB<br>BAND</div>
+                <div class="items item4">32 GB<br>MEMORY</div>
+                <div class="items item5">SUPPORT<br>24</div>
+                <div class="items item6">UPDATE<br>$20</div>
+                <div class="items item7" style="background-color: black; color: white;" >ORDER NOW</div>
+            </div>
+        </div>
+    </div>
+    <div class="div6container">
+        <div class="div3inner">
+            <div id="about">
+                <h1>CONTACT US</h1>
+            </div>
+            <div id="matter">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quas nulla, veritatis provident et, nesciunt, in ratione voluptas nostrum similique omnis totam eveniet. Odio vel esse ullam, placeat sunt impedit.</p>
+            </div>
+            <div id="divonly"></div>
+        </div>
+    </div>
+    <div class="divmap">
+    </div>
+    <div class="last">
+        <div class="information">
+            <input type="text" placeholder="NAME"><br>
+           <br> <input type="email" placeholder="Email"><br>
+           <br> <input type="text" placeholder="TITLE"><br>
+           <br> <input type="text"><br>
+           <br> <input type="submit" placeholder="send" style="width: 100px; height: 40px;">
+        </div>
+        <div class="touch">
+            <div class="bhannu">
+                <p style="margin-left: 10px; margin-top: 40px; color: orange;">GET in touch</p>
+                <img class="images" src="location-icn.png"><br>
+               <img class="images" src="phone-icn.png"><br>
+               <img class="images" src="mail-icn.png"><br>
+               <p style="margin-left: 50px; margin-top: -135px; width: 200px; color: white;">990 Proin Gravida Street, Aliquet Snean Tate</p>
+               <p style="margin-left: 60px; color: white; width: 100px; margin-top: 20px;" >(+001) 001 002 0034</p>
+               <p style="margin-left: 45px; margin-top: 20px; color: white;"> info@bharadwaj.com</p>
+            </div>
+
+        </div> 
+    </div>
+    <div class="lastfooter">
+        <div>
+            <p>COPYRIGHT © 2024/09/07/ Bharadwaj.DESIGN: TEMPLATEMO</p>
+        </div>
+
+    </div>
+</body>
+</body>
+</html>
